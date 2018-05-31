@@ -7,7 +7,6 @@
 <div th:replace="fragments :: page-header"></div>
 
 <div class="container body-content">
-   <h1> All Jobs </h1>
 
     <div th:if="${jobs} and ${jobs.size()}">
         <table>
@@ -16,6 +15,8 @@
                 <td>Result(s)</td>
             </tr>
         </table>
+
+
         <table>
             <tr th:each="item, idx : ${jobs}" th:class="${idx.odd} ? 'odd'">
                 <table width="80%" align="center" border="0.5">
@@ -33,7 +34,8 @@
 
 
         </table>
+
     </div>
-</div>
+
 </body>
 </html>

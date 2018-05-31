@@ -47,22 +47,22 @@
 
 
          <table>
-        <tr th:each="item, idx : ${jobs}" th:class="${idx.odd} ? 'odd'">
-            <table width="80%" align="center" border="0.5">
-                <tr th:each="key, idx : ${item}">
+            <tr th:each="item, idx : ${jobs}" th:class="${idx.odd} ? 'odd'">
+                <table width="80%" align="center" border="0.5">
+                    <tr th:each="key, idx : ${item}">
 
-                    <td th:text="${key.key}" style="font-weight:bold;"></td>
-                    <td th:text="${key.value}" width="80%"></td>
+                        <td th:text="${key.key}" style="font-weight:bold;"></td>
+                        <td th:text="${key.value}" width="80%"></td>
 
-                </tr>
+                    </tr>
 
-            </table>
-            <p>&nbsp;</p>
+                </table>
+                <p>&nbsp;</p>
 
-        </tr>
+            </tr>
 
 
-    </table>
+        </table>
 
     </div>
 
